@@ -1,3 +1,4 @@
 FROM ubuntu:16.04
 
-apt-get install ssh
+RUN apt-get update && apt-get install -y \
+    ssh 
